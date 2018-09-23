@@ -1,0 +1,15 @@
+.btn{
+  color: black;
+  border-radius: 4px;
+  padding:5px;
+  font-size: 14px;
+  min-width: 80px;
+}
+.msg1{
+  color:red;
+  border-color: red;
+}
+.msg2{
+  color:green;
+  border-color: green;
+}

@@ -2,9 +2,24 @@
 <html>
    <head>
        <meta charset="utf-8">
+       <script src="angular.min.js"></script>
+       <script src="app.js"></script>
+       <link href="/Module1-Solution/style.css"/>
        <title> Lunch Check </title>
      </head>
-     <body>
-        hello sonal
-     </body>
+     <body ng-app="LunchCheck">
+       <div ng-controller="LunchCheckController">
+         <div>
+            <input type="text" ng-model="items"></input>
+            <label ng-if="!items1 && !items2 && !items3" style="color:red">{{message1}}</label>
+            <label ng-if="items1" class="msg1" style="color:red">{{message1}}</label>
+            <label ng-if="items2" class="msg2" style="color:green">{{message2}}</label>
+            <label ng-if="items3" class="msg2" style="color:green">{{message3}}</label>
+          </div>
+        </br>
+        <div>
+            <button class="btn" ng-click="itemsCheck();" ng-model="itemsCheck();">Check If Too Much!</button>
+       </div>
+     </div>
+   </body>
 </html>
