@@ -10,7 +10,7 @@
      <body ng-app="LunchCheck">
        <div ng-controller="LunchCheckController">
          <div>
-            <input type="text" ng-model="items"></input>
+            <input type="text" ng-model="items"/>
             <label ng-if="!items1 && !items2 && !items3" style="color:red">{{message1}}</label>
             <label ng-if="items1" class="msg1" style="color:red">{{message1}}</label>
             <label ng-if="items2" class="msg2" style="color:green">{{message2}}</label>
